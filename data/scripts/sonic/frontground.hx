@@ -8,11 +8,11 @@ public var map:FlxTilemapExt;
 function create(){
     // map
     add(map = new FlxTilemapExt().loadMapFromCSV('data/tiled/greenHillZone_map.csv', Assets.getBitmapData(Paths.image('sonic/tilesets/greenHillZone'), true, false)));
-    map.setSlopes([22, 24, 25, 28, 30], [23, 26, 27, 29, 31]);
-    map.setGentle([25, 26], [24, 27]);
-    map.setSteep([28, 29], [30, 31]);
-    map.setTile([28, 29], [30, 31]);
+    map.setSlopes([25, 27, 28, 31, 33], [26, 29, 30, 32, 34]);
+    map.setGentle([28, 29], [27, 30]);
+    map.setSteep([31, 32], [33, 34]);
     map.setTileProperties(41, FlxDirectionFlags.CEILING);
+    map.setDownwardsGlue(true);
     // grass
     add(grass = new FlxTilemapExt().loadMapFromCSV('data/tiled/greenHillZone_grass.csv', Assets.getBitmapData(Paths.image('sonic/tilesets/greenHillZone'), true, false)));
 }
