@@ -1,0 +1,9 @@
+{
+    "enemies": {
+        "metall": [
+            {
+                "position": [105, -15]
+            }
+        ]
+    }
+}
